@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+}
+
+.left {
+  flex: 1;
+  background: #f9f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  width: 60%;
+}
+
+.right {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+}
+
+.right h1 {
+  font-size: 36px;
+  margin-bottom: 0;
+  color: #2b3a67;
+}
+
+.right h2 {
+  color: #497ff3;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group input {
+  padding: 12px 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.register-btn {
+  padding: 12px;
+  border-radius: 25px;
+  background-color: #497ff3;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-btn:hover {
+  background-color: #355dc3;
+}
+
+.login-link {
+  margin-top: 12px;
+  color: #497ff3;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.firma {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.firma img {
+  max-height: 50px;
+}

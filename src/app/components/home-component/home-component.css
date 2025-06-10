@@ -1,0 +1,54 @@
+
+.document-page {
+  height: auto;
+  padding: 2rem;
+  background-color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.title {
+  font-size: 2rem;
+  color: #2e4c9e;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-cargar {
+  background-color: #3b5ecb;
+}
+
+.card-subir {
+  background-color: #002885;
+}

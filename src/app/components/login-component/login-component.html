@@ -1,0 +1,30 @@
+<div class="container">
+      <div class="left">
+        <img src="/img/user-login.png" alt="Login illustration" />
+      </div>
+
+      <form class="right"  (ngSubmit)="login()">
+        <h1>Bienvenido</h1>
+        <h2>DocSafe</h2>
+
+        <div class="form-group">
+          <input
+            type="text"
+
+            placeholder="ingresar correo electronico"
+          />
+          <input
+            type="password"
+
+            placeholder="ingresar contraseña"
+          />
+          <button class="register-btn">Crear Cuenta</button>
+        </div>
+
+        <a class="login-link" routerLink="/home">iniciar sesión</a>
+
+        <!--<div class="firma">
+      <img src="/public/img/user-login.png" alt="Logo" />
+    </div>-->
+      </form>
+</div>
