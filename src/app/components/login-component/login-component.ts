@@ -3,21 +3,28 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 
-
 @Component({
   selector: 'app-login-component',
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './login-component.html',
-  styleUrl: './login-component.css'
+  styleUrls: ['./login-component.css'],
 })
 export class LoginComponent {
-  constructor(
-    private routes:Router 
-  ){}
   nombre = '';
   contrasena = '';
 
-  login(){
-    this.routes.navigate(["/home"])
+  constructor(private router: Router) {}
+
+  login() {
+    if (this.nombre && this.contrasena) {
+      this.router.navigate(['/home']);
+    } else {
+      console.log('Por favor, completa ambos campos.');
+    }
+  }
+
+  irARegistro() {
+
+    this.router.navigate(['/register']);
   }
 }
